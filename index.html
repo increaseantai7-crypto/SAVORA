@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Savora — Taste Something Extraordinary</title>
+    <meta
+        name="description"
+        content="Savora is a premium dining experience where exceptional food meets intelligent service."
+    >
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                Savora
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#reservation">Reservations</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartButton">
+                    Cart
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         MOBILE NAVIGATION
+    ========================== -->
+    <div class="mobile-menu" id="mobileMenu">
+
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            ×
+        </button>
+
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#reservation">Reservations</a>
+
+    </div>
+
+
+    <main>
+
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <p class="eyebrow">
+                    ELEVATED DINING
+                </p>
+
+                <h1>
+                    Taste something
+                    <span>extraordinary.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Thoughtfully crafted dishes, unforgettable flavors,
+                    and a dining experience designed around you.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#menu" class="btn btn-primary">
+                        Explore Menu
+                    </a>
+
+                    <a href="#reservation" class="btn btn-secondary">
+                        Reserve a Table
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEATURE STRIP
+        ========================== -->
+        <section class="feature-strip">
+
+            <div class="container feature-grid">
+
+                <div class="feature">
+                    <span class="feature-icon">✦</span>
+                    <div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>Carefully selected every day.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">✦</span>
+                    <div>
+                        <h3>Crafted With Care</h3>
+                        <p>Every plate has a purpose.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">✦</span>
+                    <div>
+                        <h3>Made For You</h3>
+                        <p>A dining experience that feels personal.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MENU SECTION
+        ========================== -->
+        <section class="menu-section" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        OUR MENU
+                    </p>
+
+                    <h2>
+                        Crafted for every craving.
+                    </h2>
+
+                    <p>
+                        Explore dishes prepared with carefully selected
+                        ingredients and bold, balanced flavors.
+                    </p>
+
+                </div>
+
+
+                <!-- Menu Filters -->
+                <div class="menu-filters">
+
+                    <button class="filter-btn active" data-category="all">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-category="starters">
+                        Starters
+                    </button>
+
+                    <button class="filter-btn" data-category="mains">
+                        Mains
+                    </button>
+
+                    <button class="filter-btn" data-category="desserts">
+                        Desserts
+                    </button>
+
+                    <button class="filter-btn" data-category="drinks">
+                        Drinks
+                    </button>
+
+                </div>
+
+
+                <!-- Menu Items -->
+                <div class="menu-grid" id="menuGrid">
+                    <!-- JavaScript will insert menu items here -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+        <section class="about-section" id="about">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        Savora
+                    </div>
+                </div>
+
+                <div class="about-content">
+
+                    <p class="eyebrow">
+                        THE SAVORA EXPERIENCE
+                    </p>
+
+                    <h2>
+                        More than a meal.
+                        <span>It's a moment.</span>
+                    </h2>
+
+                    <p>
+                        At Savora, we believe great food should feel
+                        memorable. From the first bite to the final sip,
+                        every detail is designed to make your experience
+                        special.
+                    </p>
+
+                    <p>
+                        Our kitchen combines creativity, quality
+                        ingredients, and thoughtful preparation to create
+                        dishes worth coming back for.
+                    </p>
+
+                    <a href="#reservation" class="text-link">
+                        Experience Savora →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AI ASSISTANT SECTION
+        ========================== -->
+        <section class="ai-section">
+
+            <div class="container ai-card">
+
+                <div class="ai-content">
+
+                    <p class="eyebrow">
+                        SAVORA AI
+                    </p>
+
+                    <h2>
+                        Not sure what to order?
+                    </h2>
+
+                    <p>
+                        Our intelligent dining assistant will help you
+                        discover dishes based on your taste, mood,
+                        preferences, and occasion.
+                    </p>
+
+                    <button class="btn btn-primary" id="openAiButton">
+                        Ask Savora AI
+                    </button>
+
+                </div>
+
+                <div class="ai-visual">
+                    <div class="ai-circle">
+                        <span>✦</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             RESERVATION SECTION
+        ========================== -->
+        <section class="reservation-section" id="reservation">
+
+            <div class="container reservation-container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        RESERVATIONS
+                    </p>
+
+                    <h2>
+                        Your table is waiting.
+                    </h2>
+
+                    <p>
+                        Choose your preferred date, time, and party size.
+                    </p>
+
+                </div>
+
+
+                <form class="reservation-form" id="reservationForm">
+
+                    <div class="form-group">
+                        <label for="guestName">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="guestName"
+                            name="guestName"
+                            placeholder="Your name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="guestEmail">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="guestEmail"
+                            name="guestEmail"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="reservationDate">
+                                Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="reservationDate"
+                                name="reservationDate"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="reservationTime">
+                                Time
+                            </label>
+
+                            <input
+                                type="time"
+                                id="reservationTime"
+                                name="reservationTime"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guestCount">
+                            Guests
+                        </label>
+
+                        <select id="guestCount" name="guestCount">
+
+                            <option value="1">
+                                1 Guest
+                            </option>
+
+                            <option value="2" selected>
+                                2 Guests
+                            </option>
+
+                            <option value="3">
+                                3 Guests
+                            </option>
+
+                            <option value="4">
+                                4 Guests
+                            </option>
+
+                            <option value="5">
+                                5 Guests
+                            </option>
+
+                            <option value="6">
+                                6 Guests
+                            </option>
+
+                            <option value="7">
+                                7 Guests
+                            </option>
+
+                            <option value="8">
+                                8 Guests
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">
+                        Request Reservation
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         CART DRAWER
+    ========================== -->
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+            </h2>
+
+            <button id="closeCartButton">
+                ×
+            </button>
+
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    ₦0
+                </strong>
+
+            </div>
+
+            <button class="btn btn-primary checkout-btn">
+                Continue
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         AI MODAL
+    ========================== -->
+    <div class="modal" id="aiModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeAiButton">
+                ×
+            </button>
+
+            <p class="eyebrow">
+                SAVORA AI
+            </p>
+
+            <h2>
+                What are you in the mood for?
+            </h2>
+
+            <p>
+                Tell Savora what you're craving and we'll help you
+                discover something you'll love.
+            </p>
+
+            <div class="ai-input-wrapper">
+
+                <input
+                    type="text"
+                    id="aiInput"
+                    placeholder="e.g. Something spicy and filling..."
+                >
+
+                <button id="aiSendButton">
+                    Send
+                </button>
+
+            </div>
+
+            <div class="ai-response" id="aiResponse">
+                <!-- AI response will appear here later -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="#" class="logo">
+                    Savora
+                </a>
+
+                <p>
+                    Exceptional food.
+                    Thoughtful experiences.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Explore
+                </h3>
+
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#reservation">Reservations</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    hello@savora.com
+                </p>
+
+                <p>
+                    +234 000 000 0000
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Savora. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>
